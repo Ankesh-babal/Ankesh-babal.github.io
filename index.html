@@ -1,609 +1,778 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Ankesh Babal Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
-
-<style>
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Ankesh-Babal</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/myimg.jpeg);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Ankesh Babal</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Engineer  ',
-						'student   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>A Master's of Analytics Student</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/ankeshbabal/" class="btn btn-primary py-3 px-4">linkedin</a> 
-							<a href="https://github.com/Ankesh-babal" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/anku 1.jpeg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Ankesh Babal</span></p>
-										<p><span class="title-s">Role: </span> <span>Student</span></p>
-										<p><span class="title-s">Experience: </span> <span>Fresher</span></p>
-										<p><span class="title-s">Address: </span> <span>Auckland, New Zealand</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>Passionate about leveraging data-driven insights to enhance business performance and operational efficiency. Currently pursuing a Master's in Analytics, with hands-on experience in data analysis, administrative support, and process improvement. Skilled in tools like Power BI, Python, SAS, SQL, and AWS, with a strong ability to translate complex data into actionable strategies. Motivated, detail-oriented, and eager to contribute to innovative projects that drive informed decision-making and business success.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Hospitality,Retail, Ecommerce &amp; Education</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Masters of Analytics</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker, SQL &amp; DAX</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Python, JIRA, statistics &amp; oracle sql</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Reading</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="7">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-
-
-
-
-	  <div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Jun 2025 – Oct 2025</span>
-						<h2> DEALTABLE.AI  </h2>
-						<span class="position">Industrial Internship </span>
-						<p class="mt-4">
-								<li>Built an end-to-end LLM-based pipeline to support venture capital investment decision-making</li>
-								<li>Processed and structured 10K+ documents to enable data-driven evaluation of startups</li>
-								<li>Designed a scoring and evaluation framework to assess model outputs and identify high-risk investment cases</li>
-								<li>Developed API-based solution for real-time decision support and model interaction</li>
-								<li>Worked on retrieval-based AI workflows (RAG) using document processing and structured inputs</li>
-								<li>Improved consistency and speed of decision-making through structured AI outputs</li>
-
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-
-
-		  
-	  <div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">June 2023 - April 2024</span>
-						<h2>WAMPUM SYNTAX / INDUSTRIES </h2>
-						<span class="position">Client Service Coordinator </span>
-						<p class="mt-4">
-								<li>Managed end-to-end customer orders, coordinating with production and logistics teams to ensure timely delivery.</li>
-								<li> Handled client inquiries regarding yarn dyeing specifications, order status, and timelines with clear communication.</li>
-								<li> Resolved quality concerns, including colour matching and dye consistency, maintaining customer satisfaction.</li>
-								<li> Maintained accurate documentation of orders and communications to support operational efficiency.</li>
-
-							</ul>
-						</p>
-					</div>
-
-				</div>
-		  
-	  
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">June24-Present</span>
-						<h2>Office Administrator/CSR</h2>
-						<span class="position">BP CONNECT LINCON</span>
-						<p class="mt-4">BP p.l.c. is a British multinational oil and gas company, recognized as one of the industry's supermajors and among the world's largest by revenue and profit.
-							<ul>
-								<li>Provided administrative support to the Manager and team, ensuring smooth daily office operations and communication.</li>
-								<li>Managed inventory, placed and expedited supply orders, and tracked parcels to meet organizational timelines.</li>
-								<li>Handled emails, scheduled tasks, entered data into systems, and maintained accurate invoice and financial records.</li>
-								<li>Assisted front-desk customers, coordinated office procedures, and supported Business Day Management (BDM) activities</li>
-
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Dec 2022 –May 2023 </span>
-						<h2>Data Analyst Intern</h2>
-						<span class="position">ATLIQ TECHNOLOGIES (Remote)</span>
-						<p class="mt-4">
-							<ul>
-								<li>Automating the data cleaning using Power Query, which can rescue around 4 hrs. of repeated manual work.</li>
-								<li>Generating sales trends, including monthly, yearly, & yearly-month trends.</li>
-								<li>Optimizing data analysis & manipulation using advanced Excel functions, Power BI resulting in a 20% reduction in data processing time & improved accuracy of financial reports.</li>
-								<li>Hands-on experience in delivering insights through data visualizations.</li>
-								<li>Hands-on experience with business intelligence tools such as Power BI & SQL.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-			</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					
-    					<h2>Bachelor of Engineering with honours in cybersecurity</h2>
-    					<span class="position">Pune University, Maharashtra, India.</span>
-    					<p class="mt-4">Grade: 9.2 cgpa</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					
-    					<h2>Masters of Analytics </h2>
-    					<span class="position">Auckland University of Technology</span>
-    					<p class="mt-4">Auckland, New Zealand</p>
-    				</div>
-				</div>
-    		</div>
-
-    		
-    	</div>
-    </section>
-
-   
-	<div class="row justify-content-center mt-5">
-		<div class="col-md-6 text-center ftco-animate">
-		  <p>
-			<a href="https://drive.google.com/file/d/1XpRGF6XCfG2QYly9FrELS1hl7qsFtDo9/view?usp=sharing"
-			   class="btn btn-primary py-4 px-5"
-			   target="_blank"
-			   rel="noopener noreferrer">
-			   View Resume
-			</a>
-		  </p>
-		</div>
-	  </div>
-	  
-	
-	
-
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are Data Analytics projects on AWS, SQL, Python, Power BI & ML.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankesh Babal | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    :root {
+      --primary: #ffbd39;
+      --secondary: #111111;
+      --text: #d9d9d9;
+      --muted: #999999;
+      --card: #1a1a1a;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .hero .text {
+      max-width: 640px;
+    }
+
+    .hero .subheading {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-weight: 500;
+      color: var(--primary);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #ffffff;
+      margin-top: 18px;
+    }
+
+    .hero p {
+      margin-top: 24px;
+    }
+
+    #typing-animation {
+      display: inline-block;
+      min-height: 42px;
+      font-size: 28px;
+      font-weight: 600;
+      color: #ffffff;
+      border-right: 3px solid var(--primary);
+      white-space: nowrap;
+      overflow: hidden;
+      padding-right: 6px;
+    }
+
+    .section-title-wrap {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title-wrap .big-4,
+    .section-title-wrap .big.big-2,
+    .section-title-wrap .big {
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .underline {
+      width: 80px;
+      height: 4px;
+      background: var(--primary);
+      margin: 12px auto 0;
+      border-radius: 999px;
+    }
+
+    .about-card,
+    .resume-wrap,
+    .project-card,
+    .contact-box {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .about-card {
+      padding: 28px;
+      height: 100%;
+    }
+
+    .profile-pic {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 3px solid rgba(255,255,255,0.08);
+    }
+
+    .about-info p {
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    .about-info .title-s {
+      display: inline-block;
+      min-width: 110px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .skill-mf {
+      margin-top: 28px;
+    }
+
+    .skill-mf .title-s {
+      display: block;
+      margin-bottom: 18px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .skill-item {
+      margin-bottom: 18px;
+    }
+
+    .skill-item .label-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .skill-mf .progress {
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .skill-mf .progress .progress-bar {
+      background: var(--primary);
+      border-radius: 999px;
+    }
+
+    .about-text h2 {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .about-text p,
+    .about-text li {
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    .about-info-list {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0 0;
+    }
+
+    .about-info-list li {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-info-list li span:first-child {
+      min-width: 120px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .counter-wrap .number {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .resume-wrap {
+      padding: 28px;
+      height: 100%;
+      margin-bottom: 30px;
+    }
+
+    .resume-wrap .date {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,189,57,0.12);
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .resume-wrap h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+
+    .resume-wrap .position {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: #c9c9c9;
+      font-weight: 500;
+    }
+
+    .resume-wrap ul {
+      padding-left: 18px;
+      margin-bottom: 0;
+    }
+
+    .resume-wrap li {
+      margin-bottom: 10px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .resume-button-wrap {
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    .project-card {
+      overflow: hidden;
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+    }
+
+    .project-image {
+      display: block;
+      width: 100%;
+      height: 220px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .project-content {
+      padding: 22px;
+    }
+
+    .project-content h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .project-content h3 a {
+      color: #ffffff;
+    }
+
+    .project-content p {
+      color: var(--text);
+      margin-bottom: 0;
+      line-height: 1.7;
+    }
+
+    .contact-box {
+      padding: 28px 20px;
+      text-align: center;
+      height: 100%;
+    }
+
+    .contact-box .icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: rgba(255,189,57,0.1);
+      color: var(--primary);
+      font-size: 28px;
+    }
+
+    .contact-box h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .contact-box p,
+    .contact-box a {
+      color: var(--text);
+      word-break: break-word;
+    }
+
+    .social-wrap {
+      margin-top: 40px;
+    }
+
+    .social-wrap .normal-txt {
+      color: #ffffff;
+      margin-right: 16px;
+      font-weight: 500;
+    }
+
+    .social-wrap a {
+      width: 46px;
+      height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+      transition: all 0.3s ease;
+    }
+
+    .social-wrap a:hover {
+      background: var(--primary);
+      color: #111111;
+    }
+
+    @media (max-width: 991px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .about-card {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      #typing-animation {
+        font-size: 22px;
+        min-height: 34px;
+      }
+
+      .about-info .title-s,
+      .about-info-list li span:first-child {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Ankesh Babal</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+      <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+            <div class="col-md-6 col-lg-6 ftco-animate d-flex align-items-center">
+              <div class="text">
+                <span class="subheading">Hello, welcome to my portfolio</span>
+                <h1 class="mb-3">I'm <span>Ankesh Babal</span></h1>
+                <span id="typing-animation"></span>
+                <h2>A Master's of Analytics graduate focused on AI, data, and practical problem solving</h2>
+                <p>
+                  <a href="https://www.linkedin.com/in/ankeshbabal/" class="btn btn-primary py-3 px-4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="https://github.com/Ankesh-babal" class="btn btn-white btn-outline-white py-3 px-4" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 order-md-last d-flex align-items-center justify-content-center ftco-animate">
+              <div class="img js-fullheight" style="width: 100%; background-image:url('images/myimg.jpeg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+      <div class="section-title-wrap ftco-animate">
+        <h1 class="big-4">About</h1>
+        <div class="underline"></div>
+      </div>
 
-	 <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Ankesh-babal/End-to-End Transit Analytics & AI-Ready Data Pipelines" class="block-20 zoom-effect" style="background-image: url('images/a1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/Ankesh-babal/End-to-End Transit Analytics & AI-Ready Data Pipeline">End-to-End Transit Analytics & AI-Ready Data Pipeline</a></h3>
-                <p>Built a complete transit analytics pipeline using Python and Streamlit to process GTFS static and simulated real-time data
-Generated key insights on headways, delays, reliability, and route performance
-Developed a multi-page dashboard (Headways, Delays, Reliability, Heatmaps, Route Comparison, Performance Score)
-Engineered data cleaning, feature creation, KPI generation, and exportable Gold-layer datasets for reporting
-Designed cloud architecture using Azure Data Lake, Data Factory, and Databricks for scalable and automated pipelines.</p>
+      <div class="row align-items-stretch">
+        <div class="col-lg-5 d-flex ftco-animate">
+          <div class="about-card w-100">
+            <div class="row align-items-center">
+              <div class="col-sm-5 text-center text-sm-left mb-4 mb-sm-0">
+                <img src="images/anku 1.jpeg" class="img-fluid profile-pic" alt="Ankesh Babal">
+              </div>
+              <div class="col-sm-7">
+                <div class="about-info">
+                  <p><span class="title-s">Name:</span> <span>Ankesh Babal</span></p>
+                  <p><span class="title-s">Role:</span> <span>AI and Data Professional</span></p>
+                  <p><span class="title-s">Focus:</span> <span>LLMs, Analytics, Data Pipelines</span></p>
+                  <p><span class="title-s">Location:</span> <span>Auckland, New Zealand</span></p>
+                </div>
               </div>
             </div>
-          </div>
 
+            <div class="skill-mf">
+              <span class="title-s">Core Skills</span>
 
-		  
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Ankesh-babal/AtliQ_Hospitatliy_Analysis" class="block-20 zoom-effect" style="background-image: url('images/a1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/Ankesh-babal/AtliQ_Hospitatliy_Analysis">AtliQ Hospitatliy Analysis using PowerBI</a></h3>
-                <p>Developed a data-driven dashboard for Atliq Grands, leveraging business and data intelligence to enhance revenue management decisions and improve market competitiveness.</p>
+              <div class="skill-item">
+                <div class="label-row"><span>SQL</span><span>85%</span></div>
+                <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%"></div></div>
               </div>
-            </div>
-          </div>
 
-			
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Ankesh-babal/Expense-Tracker-System" class="block-20 zoom-effect" style="background-image: url('images/a2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/Ankesh-babal/Expense-Tracker-System">Expense Management System using python</a></h3>
-                <p>Developed an Expense Management System with a Streamlit frontend and FastAPI backend, enabling users to efficiently track, manage, and visualize financial transactions in real time.</p>
+              <div class="skill-item">
+                <div class="label-row"><span>Python</span><span>85%</span></div>
+                <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%"></div></div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/Ankesh-babal/Obesity-Disease-Detection-Using-Machine-Learning-Approach" class="block-20 zoom-effect" style="background-image: url('images/a3.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/Ankesh-babal/Obesity-Disease-Detection-Using-Machine-Learning-Approach">Power BI Sales dashboard Project for Beginners</a></h3>
-                <p>Developed a machine learning-based obesity risk prediction system using SVM, Random Forest, and XGBoost, achieving 96.44% accuracy with SVM and integrating a user-friendly desktop GUI for real-time predictions.</p>
+              <div class="skill-item">
+                <div class="label-row"><span>Power BI & Data Visualisation</span><span>80%</span></div>
+                <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="label-row"><span>Statistical Analysis</span><span>80%</span></div>
+                <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="label-row"><span>Machine Learning & LLM Workflows</span><span>78%</span></div>
+                <div class="progress"><div class="progress-bar" role="progressbar" style="width: 78%"></div></div>
               </div>
             </div>
           </div>
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/Ankesh-babal/Uber-data-engineering-project" class="block-20 zoom-effect" style="background-image: url('images/a4.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/Ankesh-babal/Uber-data-engineering-project">Uber data engineering project using GCP </a></h3>
-				  <p>Developed an end-to-end data analytics pipeline for Uber trip data using GCP Storage, Python on Compute Instances, Mage Data Pipeline, BigQuery, and Looker Studio to deliver scalable insights and advanced data analysis.</p>
-				</div>
-			  </div>
-			</div>
-		
-		 </div>
-	  </div>
-    </section>
 
-	
+        <div class="col-lg-7 ftco-animate">
+          <div class="about-card about-text h-100">
+            <h2>About Me</h2>
+            <p>
+              I am an AI and data-focused professional with a Master's in Analytics and hands-on experience building machine learning and LLM-based solutions. I enjoy working on practical problems, building structured data pipelines, and turning complex information into useful business insights.
+            </p>
+            <p>
+              My recent work includes developing an end-to-end LLM system for venture capital decision support, processing large document collections, and creating data products that are more consistent, scalable, and useful in real environments.
+            </p>
 
+            <ul class="about-info-list">
+              <li><span>Profile</span><span>AI, Data Analytics, and Applied Machine Learning</span></li>
+              <li><span>Domains</span><span>Finance, Retail, Operations, and Decision Support</span></li>
+              <li><span>Education</span><span>Master's in Analytics</span></li>
+              <li><span>Languages</span><span>English, Hindi</span></li>
+              <li><span>Tools</span><span>Python, SQL, Power BI, DAX, Excel, Tableau</span></li>
+              <li><span>Cloud</span><span>AWS, Azure, GCP</span></li>
+              <li><span>Interests</span><span>Building practical AI systems, analytics, and problem solving</span></li>
+            </ul>
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
+            <div class="counter-wrap d-flex mt-4">
+              <div class="text">
+                <p class="mb-0"><span class="number" data-number="7">0</span><span>+ Projects completed</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section" id="resume-section">
+    <div class="container">
+      <div class="section-title-wrap ftco-animate">
+        <h1 class="big-4">Resume</h1>
+        <div class="underline"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 d-flex ftco-animate">
+          <div class="resume-wrap w-100">
+            <span class="date">Jul 2025 – Oct 2025</span>
+            <h2>Dealtable.ai</h2>
+            <span class="position">Industrial Internship</span>
+            <ul>
+              <li>Built an end-to-end LLM-based pipeline to support venture capital investment decision-making.</li>
+              <li>Processed and structured 10K+ documents to support data-driven evaluation.</li>
+              <li>Designed a scoring and evaluation framework to assess outputs and identify high-risk cases.</li>
+              <li>Developed an API-based solution for real-time decision support.</li>
+              <li>Worked on retrieval-based AI workflows using document processing and structured inputs.</li>
+              <li>Improved consistency and speed of decision-making through structured AI outputs.</li>
+            </ul>
           </div>
         </div>
 
-        <div class="row justify-content-center mb-5">
-			<!-- Address -->
-			<div class="col-md-6 col-lg-3 d-flex justify-content-center ftco-animate">
-			  <div class="align-self-stretch box p-4 text-center">
-				<div class="icon d-flex align-items-center justify-content-center">
-				  <span class="icon-map-signs"></span>
-				</div>
-				<h3 class="mb-4">Address</h3>
-				<p>Auckland, New Zealand</p>
-			  </div>
-			</div>
-		  
-			<!-- Email -->
-			<div class="col-md-6 col-lg-3 d-flex justify-content-center ftco-animate">
-			  <div class="align-self-stretch box p-4 text-center">
-				<div class="icon d-flex align-items-center justify-content-center">
-				  <span class="icon-paper-plane"></span>
-				</div>
-				<h3 class="mb-4">Email Address</h3>
-				<p><a href="mailto:babalankesh75@gmail.com">babalankesh75@gmail.com</a></p>
-			  </div>
-			</div>
-		  </div>
-		  
-          
+        <div class="col-md-6 d-flex ftco-animate">
+          <div class="resume-wrap w-100">
+            <span class="date">Jun 2024 – Present</span>
+            <h2>BP Connect Lincoln</h2>
+            <span class="position">Office Administrator / CSR</span>
+            <ul>
+              <li>Reviewed financial records and transaction data to support day-to-day accuracy.</li>
+              <li>Maintained inventory and administrative records for smooth operations.</li>
+              <li>Identified discrepancies and escalated exceptions for resolution.</li>
+              <li>Supported customer-facing and office processes in a fast-paced environment.</li>
+            </ul>
+          </div>
+        </div>
 
-		  
+        <div class="col-md-6 d-flex ftco-animate">
+          <div class="resume-wrap w-100">
+            <span class="date">Dec 2022 – May 2023</span>
+            <h2>AtliQ Technologies</h2>
+            <span class="position">Data Analyst Intern</span>
+            <ul>
+              <li>Designed Power BI dashboards to monitor trends, anomalies, and performance risks.</li>
+              <li>Automated and debugged data-cleaning workflows to reduce manual effort.</li>
+              <li>Standardised business reporting and reduced processing time by 20%.</li>
+              <li>Delivered insights through data visualisation and business intelligence tools.</li>
+            </ul>
+          </div>
+        </div>
 
-		  <div class="container">
-			<br>
-			<br>
-			
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					 
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/ankeshbabal/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://github.com/Ankesh-babal" ><span class="icon-github"></span></a></li>
-					  
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
+        <div class="col-md-6 d-flex ftco-animate">
+          <div class="resume-wrap w-100">
+            <span class="date">Jun 2023 – Apr 2024</span>
+            <h2>Wampum Syntax / Industries</h2>
+            <span class="position">Client Service Coordinator</span>
+            <ul>
+              <li>Managed customer orders with production and logistics teams.</li>
+              <li>Handled client communication on specifications, order status, and delivery timelines.</li>
+              <li>Resolved quality-related issues while maintaining customer satisfaction.</li>
+              <li>Maintained accurate documentation to support operational efficiency.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+      <div class="section-title-wrap ftco-animate mt-5">
+        <h1 class="big-4">Education</h1>
+        <div class="underline"></div>
+      </div>
 
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+      <div class="row">
+        <div class="col-md-6 d-flex ftco-animate">
+          <div class="resume-wrap w-100">
+            <h2>Master's in Analytics</h2>
+            <span class="position">Auckland University of Technology</span>
+            <p class="mt-3 mb-0">Auckland, New Zealand</p>
+          </div>
+        </div>
 
+        <div class="col-md-6 d-flex ftco-animate">
+          <div class="resume-wrap w-100">
+            <h2>Bachelor of Engineering</h2>
+            <span class="position">Pune University, Maharashtra, India</span>
+            <p class="mt-3 mb-0">Information Technology background</p>
+          </div>
+        </div>
+      </div>
 
-  <!-- loader -->
+      <div class="resume-button-wrap ftco-animate">
+        <a href="https://drive.google.com/file/d/1XpRGF6XCfG2QYly9FrELS1hl7qsFtDo9/view?usp=sharing" class="btn btn-primary py-3 px-5" target="_blank" rel="noopener noreferrer">View Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section" id="project-section">
+    <div class="container">
+      <div class="section-title-wrap ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <div class="underline"></div>
+        <p class="mt-3 mb-0">A few projects across AI, analytics, dashboards, and data engineering.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
+          <div class="project-card w-100">
+            <a href="https://github.com/Ankesh-babal/End-to-End-Transit-Analytics-AI-Ready-Data-Pipeline" class="project-image" style="background-image: url('images/a1.jpg');" target="_blank" rel="noopener noreferrer"></a>
+            <div class="project-content">
+              <h3><a href="https://github.com/Ankesh-babal/End-to-End-Transit-Analytics-AI-Ready-Data-Pipeline" target="_blank" rel="noopener noreferrer">Transit Analytics & AI-Ready Data Pipeline</a></h3>
+              <p>Built a complete transit analytics pipeline using Python and Streamlit to process GTFS and simulated real-time data, generate KPIs, and support scalable reporting and cloud expansion.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
+          <div class="project-card w-100">
+            <a href="https://github.com/Ankesh-babal/AtliQ_Hospitatliy_Analysis" class="project-image" style="background-image: url('images/a1.jpg');" target="_blank" rel="noopener noreferrer"></a>
+            <div class="project-content">
+              <h3><a href="https://github.com/Ankesh-babal/AtliQ_Hospitatliy_Analysis" target="_blank" rel="noopener noreferrer">AtliQ Hospitality Analysis</a></h3>
+              <p>Developed a Power BI dashboard to support revenue-focused decisions using business and data intelligence for better visibility into hospitality performance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
+          <div class="project-card w-100">
+            <a href="https://github.com/Ankesh-babal/Expense-Tracker-System" class="project-image" style="background-image: url('images/a2.jpg');" target="_blank" rel="noopener noreferrer"></a>
+            <div class="project-content">
+              <h3><a href="https://github.com/Ankesh-babal/Expense-Tracker-System" target="_blank" rel="noopener noreferrer">Expense Management System</a></h3>
+              <p>Built an expense tracking system with a Streamlit front end and FastAPI back end to manage and visualise financial transactions in real time.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
+          <div class="project-card w-100">
+            <a href="https://github.com/Ankesh-babal/Obesity-Disease-Detection-Using-Machine-Learning-Approach" class="project-image" style="background-image: url('images/a3.jpg');" target="_blank" rel="noopener noreferrer"></a>
+            <div class="project-content">
+              <h3><a href="https://github.com/Ankesh-babal/Obesity-Disease-Detection-Using-Machine-Learning-Approach" target="_blank" rel="noopener noreferrer">Obesity Risk Prediction</a></h3>
+              <p>Developed a machine learning-based obesity risk prediction system using multiple models and a user-friendly interface for real-time predictions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
+          <div class="project-card w-100">
+            <a href="https://github.com/Ankesh-babal/Uber-data-engineering-project" class="project-image" style="background-image: url('images/a4.jpg');" target="_blank" rel="noopener noreferrer"></a>
+            <div class="project-content">
+              <h3><a href="https://github.com/Ankesh-babal/Uber-data-engineering-project" target="_blank" rel="noopener noreferrer">Uber Data Engineering Project</a></h3>
+              <p>Created an end-to-end analytics pipeline using GCP, Python, BigQuery, and Looker Studio to deliver scalable insights from Uber trip data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <div class="container">
+      <div class="section-title-wrap ftco-animate">
+        <h1 class="big big-2">Contact</h1>
+        <div class="underline"></div>
+        <p class="mt-3 mb-0">Feel free to connect with me.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate mb-4">
+          <div class="contact-box w-100">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-map-signs"></span>
+            </div>
+            <h3>Address</h3>
+            <p>Auckland, New Zealand</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate mb-4">
+          <div class="contact-box w-100">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-paper-plane"></span>
+            </div>
+            <h3>Email</h3>
+            <p><a href="mailto:babalankesh75@gmail.com">babalankesh75@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-wrap text-center ftco-animate">
+        <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+          <li class="normal-txt">Find me on</li>
+          <li class="mx-2"><a href="https://www.linkedin.com/in/ankeshbabal/" target="_blank" rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
+          <li class="mx-2"><a href="https://github.com/Ankesh-babal" target="_blank" rel="noopener noreferrer"><span class="icon-github"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">Colorlib</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+  <script>
+    const typingAnimationElement = document.getElementById('typing-animation');
+    const typingTexts = [
+      'AI and Data Professional',
+      'LLM Builder',
+      'Analytics Graduate'
+    ];
+
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeLoop() {
+      const currentText = typingTexts[textIndex];
+
+      if (isDeleting) {
+        typingAnimationElement.textContent = currentText.substring(0, charIndex--);
+      } else {
+        typingAnimationElement.textContent = currentText.substring(0, charIndex++);
+      }
+
+      let speed = isDeleting ? 60 : 110;
+
+      if (!isDeleting && charIndex === currentText.length + 1) {
+        speed = 1400;
+        isDeleting = true;
+      } else if (isDeleting && charIndex < 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % typingTexts.length;
+        speed = 350;
+      }
+
+      setTimeout(typeLoop, speed);
+    }
+
+    typeLoop();
+  </script>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -617,8 +786,6 @@ Designed cloud architecture using Azure Data Lake, Data Factory, and Databricks 
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  
   <script src="js/main.js"></script>
-    
-  </body>
+</body>
 </html>
